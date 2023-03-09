@@ -1,0 +1,215 @@
+\documentclass{article}
+% Margin definition.
+\usepackage[a4paper,total={6.8in, 8.5in}]{geometry}
+\usepackage{parskip}
+\usepackage[bottom]{footmisc}
+% Images.
+\usepackage{graphicx}
+\usepackage[hidelinks, bookmarks=true]{hyperref}
+\usepackage{float}
+% Encoding.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+% To have another layer of sub sections - \paragraph
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% Allow multiline comments
+\usepackage{verbatim} 
+% Helvetic font.
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+% Header for UA logo.
+\usepackage{fancyhdr}
+% Dots in index.
+\usepackage[titles]{tocloft}
+\renewcommand{\cftsubsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecfont}{\large\bfseries\scshape}
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand*{\HyperDestNameFilter}[1]{\jobname-#1}
+% Dot after number in (sub)sections and in toc.
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+\usepackage{titlesec}
+\titlelabel{\hspace{-0.5cm}\quad}
+\usepackage[letterspace=45]{microtype}
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1}
+
+\nameref*{#1}}}
+% Header with UA logo definition. 
+\pagestyle{fancy}
+\fancyhf{}
+\chead{
+    \includegraphics[width=5in]{./images/header_ua.png}
+}
+\setlength\headheight{45pt}
+\setlength\parindent{24pt}
+\usepackage{indentfirst}
+% Footer with page number.
+\rfoot{Page \thepage}
+\renewcommand{\footrulewidth}{0.1pt}
+
+% Rename table of contents title to "Index"
+\renewcommand{\contentsname}{\normalsize Index \vspace{0.6cm}}
+% Add text with hyperlink
+\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=blue,
+%    filecolor=magenta
+%}
+% Water mark
+\newsavebox\mybox
+\usepackage[printwatermark]{xwatermark}
+\usepackage{xcolor}
+\usepackage{tikz}
+% paragraph
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\setlength\parindent{24pt}
+%images
+ \usepackage{graphicx}
+\usepackage{caption}
+% footnotes at bottom
+\usepackage[bottom]{footmisc}
+% Urls with line break
+\usepackage{pdflscape}
+% Drawing functions
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{width=7cm, height=4cm, compat=1.17}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+%%%%%%%%%%%% References/Bibliography %%%%%%%%%%%%
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%% Cover Page %%%%%%%%%%%%%%%%%%
+\title{\vspace{-0.9cm}
+       \vspace{1cm}
+       \normalsize
+       \raggedright\textbf{Title: \hspace{1.5cm} SIO - Report 1} \\ \vspace{0.4cm}
+       \raggedright\textbf{Author: \hspace{1.12cm} Eduardo Santos 93107, Pedro Sobral 98491, Pedro Bastos 93150} \\ \vspace{0.4cm}
+       \raggedright\textbf{Date: \hspace{1.48cm} 02/03/2023} \\}
+\author{}
+\date{}
+
+\maketitle
+\thispagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%% END Cover Page %%%%%%%%%%%%%%%%%%
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+
+\fontsize{10pt}{13pt}
+\selectfont
+\lsstyle
+
+\titlelabel{\thetitle.\quad}	
+
+%\newpage
+
+\section{Introductory Note}
+
+\section{Application Context of the University of Aveiro}
+
+\section{Structural Features of a CRM}
+
+\section{Specification Booklet to our Use Case}
+
+\section{OSS CRMs on the Market}
+
+\subsection{Odoo}
+
+\href{https://www.odoo.com/m}{Odoo}'s modular design allows for an "extensible architecture," which enables users to combine various features. The vendor's open-source Community Edition of Odoo CRM can seamlessly integrate with over 10,000 applications, all of which work together. By combining this application with other Odoo applications, the user can easily manage your inventory, email marketing, and sales operations using point-of-sale data.
+
+This CRM can be applied in several areas, such as:
+
+\begin{itemize}
+    \item Finance
+    \item Sales
+    \item Websites
+    \item Inventory \& MRP\footnote{Manufacturing Resource Planning}
+    \item Human Resources
+    \item Marketing
+    \item Services
+    \item Productivity
+\end{itemize}
+
+Another advantage of Odoo is the possibility to use the mobile user interface, allowing for higher flexibility when working with the system.
+
+Odoo can also create a lead scoring, based on both explicit and implicit criteria (pages viewed, localization, time), also allowing the definition of different actions based on the obtained data.
+
+With pipeline management, we can obtain a concise understanding of the pipelines through a streamlined interface, with efficiency improved with the drag-and-drop functionality comes the customization of specific stages for each sales team, establishing sub-stages to enhance process organization. 
+
+Concerning customer data, Odoo has various functionalities, such as: 
+
+\begin{itemize}
+    \item Customers Address Book
+    \item Customer Preferences - allows to set customer preferences easily: language, delivery methods, financial data, etc.
+    \item Full History - get the full history of activities attached to any customer: opportunities, orders, invoices, total due, etc.
+\end{itemize}
+
+Regarding communication with the customer, Odoo allows for meeting scheduling and syncing with mobile phones and Google calendar. We can also log calls or trigger VoIP calls. Odoo proposes to automatically reschedule the next action after the call. It also allows for:
+
+\begin{itemize}
+    \item Emails Templates - create a template of emails for most common communications with your customers or opportunities.
+    \item Email Gateways - get all your email communications automatically attached to the right opportunity. Create new leads automatically based on incoming emails.
+    \item VoIP - create a dial queue on customers or opportunities, call from the browser automatically or manually. Log calls automatically, open the customer form, automate next actions, etc. Reschedule or send emails for failed calls.
+\end{itemize}
+
+Odoo also offers the possibility to use its predefined dashboard or build a specific one with the advanced reporting engine, allowing for the visualization of all the needed data at a glance.
+
+\subsection{OroCRM}
+
+OroCRM utilizes the popular and highly regarded Symfony2 PHP framework for web development. This widespread use ensures that Oro's code is easily comprehensible for many open-source developers, who can then create new customizations as necessary. As a result, modifying the platform to suit your needs is relatively straightforward and cost-effective.
+
+
+
+\subsection{X2CRM}
+
+\subsection{Vtiger}
+
+\subsection{EspoCRM}
+
+\subsection{CiviCRM}
+
+\subsection{Trello}
+
+\subsection{Airtable}
+
+\subsection{Bitrix24}
+
+\subsection{suiteCRM}
+
+\section{CRM Selection Criteria}
+
+\section{Chosen CRM to the University of Aveiro}
+
+
+
+
+\section{Conclusion}
+
+
+% Add "References" to table of contents
+%\addcontentsline{toc}{section}{References}
+% No cite makes all references appear, even if there's no citation on the text
+\nocite{*}
+\printbibliography
+
+\end{document}
