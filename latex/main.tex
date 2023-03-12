@@ -1,4 +1,4 @@
-\documentclass{article}
+cy\documentclass{article}
 % Margin definition.
 \usepackage[a4paper,total={6.8in, 8.5in}]{geometry}
 \usepackage{parskip}
@@ -127,6 +127,23 @@
 
 \section{Application Context of the University of Aveiro}
 
+University of Aveiro has multiple data sources spread among different platforms:
+
+\begin{itemize}
+    \item SIGACAD - Academic Management System
+    \item SIGEF - Financial Management System
+    \item RHumo - Integrated Human Resources Management System
+    \item PACO - Academic Portal
+    \item RIA - Institutional repository
+    \item etc.
+\end{itemize}
+
+With that in mind, the challenge is to carefully choose an open-source Customer Relationship Management (CRM) system to consolidate and organize all the disparate platforms.
+
+Students frequently need to utilize these platforms to address various issues or challenges that they may be facing. For instance, a student may require adjustments to their tuition fees due to part-time work commitments, resulting in an inability to attend all classes. In such cases, the student must first modify their academic plan and subsequently adjust their payment plan. This can prove to be a confusing and difficult task, as it needs the use of multiple platforms, and most of the time, other services remain unaware of the student's current situation.
+
+This is a brief example of a scenario that demands the use of multiple services, which could be streamlined and enhanced significantly through the implementation of a CRM system. A well-implemented CRM system would enable the University of Aveiro to efficiently manage the students' situations and promptly address their needs.
+
 \section{Structural Features of a CRM}
 
 \section{Specification Booklet to our Use Case}
@@ -135,35 +152,37 @@
 
 \subsection{Odoo}
 
-Odoo CRM is an open source customer relationship management software that is designed to help businesses of all sizes manage their sales, marketing, and customer support. It offers a wide range of features, including lead management, sales pipeline management, marketing automation, and customer service tools.
+Odoo CRM is an open-source customer relationship management software that offers a modular design, allowing businesses to customize and integrate the software to meet their specific needs. It includes advanced sales pipeline management tools, such as customizable stages, automated lead assignment, and forecasting capabilities, that allow businesses to track their leads, opportunities, and deals, and automate their sales processes. Odoo CRM also includes marketing automation features, such as email marketing, lead generation tools, website visitor tracking, as well as customer service tools, such as helpdesk management and customer support tickets.
 
-One of the standout features of Odoo CRM is its modular design. The software is built on an extensible architecture that allows users to mix and match different features and apps to create a customized solution that meets their specific needs. Odoo CRM also integrates with more than 10,000 other apps, making it easy for businesses to connect with other tools in their tech stack.
-
-Odoo CRM includes advanced sales pipeline management tools, such as customizable stages, automated lead assignment, and forecasting capabilities. The software also offers marketing automation features, including email campaigns, lead nurturing workflows, and website visitor tracking.
+Regarding its modular design, the software is built on an extensible architecture that allows users to mix and match different features and apps to create a customized solution that meets their specific needs. Odoo CRM also integrates with over 10,000 other apps, making it easy for businesses to connect with other tools in their tech stack.
 
 The software's customer service tools allow businesses to manage customer inquiries and support requests from within the platform. Users can create tickets, track customer interactions, and assign tasks to team members.
 
 Odoo CRM is built on the Python programming language and is available as both a cloud-based and on-premises solution. It also offers mobile apps for iOS and Android devices, allowing users to access the software from anywhere.
 
-Overall, Odoo CRM is a powerful and flexible CRM solution for businesses of all sizes. Its modular design, advanced sales pipeline management tools, and marketing automation features make it a popular choice for businesses looking to improve their customer relationship management processes.
+Despite its features, the open-source edition of Odoo CRM may pose a significant learning curve, and it requires careful setup and implementation to avoid potential difficulties in the future. Additionally, the reporting options are limited. The customer support service is dependent on the app community members.
+
+In general, Odoo CRM is a robust and adaptable customer relationship management solution suitable for enterprises of any magnitude. With its modular architecture, sophisticated sales pipeline management utilities, and marketing automation capabilities, it is a favored option for businesses aiming to enhance their CRM operations.
 
 \subsection{OroCRM}
 
-OroCRM is a customer relationship management platform designed for businesses of all sizes, from small startups to large enterprises. It offers a variety of features to help businesses manage their customer interactions, such as contact management, sales pipeline management, marketing automation, and analytics.
+OroCRM is an open-source customer relationship management software that provides businesses with a comprehensive set of tools to manage their customer interactions and streamline their sales processes. It offers customizable stages for sales processes, allowing companies to tailor the software to their specific needs. OroCRM also includes email marketing, contact management, and reporting and analytics features, enabling businesses to gain insights into their sales and marketing efforts.
 
 One of the standout features of this OSS is its flexibility. It is built on the Symfony2 PHP framework, which is widely used and well-liked among web developers. This means that OroCRM's code is easily accessible to many open-source developers, who can create customizations and extensions to meet individual business needs.
 
-OroCRM's sales pipeline management features are particularly robust. Users can set up specific stages for each sales team, create sub-stages to better organize the sales process, and use a drag-and-drop interface to move opportunities through the pipeline. Lost opportunities are automatically archived, and other opportunities can be manually archived for future reference.
+OroCRM's sales pipeline management features are particularly robust. Users can set up specific stages for each sales team, create sub-stages to better organize the sales process, and use a drag-and-drop interface to move steps through the pipeline.
 
 Another useful feature of OroCRM is its marketing automation capabilities. Users can create targeted email campaigns, track website visitor behavior, and manage social media interactions from within the platform.
 
 OroCRM also offers powerful analytics tools, including the ability to track the performance of sales teams and analyze customer behavior patterns. These insights can help businesses make data-driven decisions to improve their customer relationship management processes.
 
-Overall, OroCRM is a flexible, cost-effective solution for businesses seeking to improve their customer relationship management processes. Its open-source nature and accessibility to web developers make it a popular choice for businesses of all sizes.
+It may be necessary to enlist the help of a developer to customize the app to include helpdesk and customer support functionality. Additionally, it's worth noting that OroCRM currently only offers an English language option and does not provide localization support.
+
+In summary, OroCRM is a versatile and affordable solution for enterprises aiming to enhance their customer relationship management procedures. Its open-source nature and availability to web developers have made it a favored option for businesses of all scales.
 
 \subsection{X2CRM}
 
-X2CRM is an open-source Customer Relationship Management (CRM) software that offers a suite of tools to help businesses manage customer interactions, sales, and marketing. It was designed for small to mid-sized businesses looking for an affordable, customizable CRM solution.
+X2CRM is a customer relationship management software that offers a wide range of tools to help businesses manage their customer interactions and automate their sales processes. It includes lead and contact management tools, sales forecasting features, and marketing automation tools, such as email campaigns and social media integration. X2CRM also includes customer service tools, such as ticket tracking and helpdesk management.
 
 The software offers a wide range of features, including contact management, lead generation, email marketing, and sales pipeline management. It also includes advanced reporting and analytics, allowing businesses to track key performance indicators and make data-driven decisions.
 
@@ -171,11 +190,13 @@ One of the unique features of X2CRM is its workflow automation, which allows bus
 
 X2CRM is built on the Yii PHP framework, which is known for its speed and scalability. The software is available in both cloud-based and on-premises versions, giving businesses flexibility in how they deploy and manage the software.
 
-Overall, X2CRM is a powerful and customizable CRM solution for businesses looking to improve their customer relationship management processes. Its advanced features, workflow automation, and affordability make it a popular choice for small to mid-sized businesses.
+X2CRM is a relatively new platform and not as widely adopted as other options, so we may encounter challenges in finding adequate support through its smaller community of users.
+
+In general, X2CRM is a potent and adaptable CRM solution that caters to the needs of businesses aiming to enhance their customer relationship management procedures. Its sophisticated functionalities, automated workflows, and affordability have made it a favored option for small to medium-sized enterprises.
 
 \subsection{Vtiger}
 
-Vtiger CRM is an open-source customer relationship management software that is designed to help businesses of all sizes manage their customer interactions, sales, and marketing. It offers a wide range of features, including contact management, sales pipeline management, marketing automation, and analytics.
+Vtiger CRM is an open-source customer relationship management software that offers businesses a complete suite of sales, marketing, and customer support tools. It includes lead and contact management, sales pipeline management, and marketing automation features, such as email campaigns and social media integration. Vtiger CRM also includes customer service tools, such as ticket tracking and helpdesk management, as well as social media integration and mobile access.
 
 One of the standout features of Vtiger CRM is its customization capabilities. The software allows users to create custom modules and fields and includes a drag-and-drop interface for designing custom workflows. This flexibility makes it easy for businesses to tailor the software to their specific needs.
 
@@ -185,19 +206,75 @@ The software's marketing automation features allow users to create targeted emai
 
 Vtiger CRM is built on the PHP programming language and is available as both a cloud-based and on-premises solution. It also offers mobile apps for iOS and Android devices, allowing users to access the software from anywhere.
 
-Overall, Vtiger CRM is a powerful and customizable CRM solution for businesses of all sizes. Its customization capabilities, sales pipeline management tools, and marketing automation features make it a popular choice for businesses looking to improve their customer relationship management processes.
+While Vtiger offers robust reporting capabilities in its paid version, its open-source reporting features are comparatively less extensive. The navigation between features can occasionally feel cumbersome and the Google Sheets integration could be improved. Moreover, Vtiger has a moderate learning curve, so the time in training a team to effectively utilize the platform should be invested in.
+
+In summary, Vtiger CRM is a potent and adaptable CRM solution suitable for enterprises of any magnitude. Its customization capabilities, sales pipeline management tools, and marketing automation features have made it a favored option for businesses aiming to enhance their customer relationship management operations.
 
 \subsection{EspoCRM}
 
+EspoCRM is a free and open-source Customer Relationship Management (CRM) software that is designed to help businesses manage their interactions with customers and leads. It is built on PHP and uses MySQL or PostgreSQL as its database management system.
+
+EspoCRM offers a range of features and functionalities, including contact management, lead management, sales forecasting, opportunity management, email integration, task management, calendar management, and reporting. It also provides customization options, allowing users to tailor the software to their specific needs and requirements.
+
+One of the unique aspects of EspoCRM is its focus on user experience. It has a simple and intuitive user interface, which makes it easy for users to navigate and use the software. Additionally, it offers mobile apps for iOS and Android devices, allowing users to access the software from anywhere, at any time.
+
+EspoCRM is a popular choice for businesses of all sizes, from small startups to large enterprises. It is widely used in industries such as healthcare, finance, retail, and telecommunications, among others.
+
+Overall, EspoCRM is a powerful and flexible CRM software that can help businesses streamline their sales and customer service processes, improve customer satisfaction, and increase revenue.
+
 \subsection{CiviCRM}
+
+ CiviCRM is a free and open-source customer relationship management software designed specifically for non-profit and civic sector organizations. It allows organizations to manage their contacts, donations, events, campaigns, and memberships all in one place. 
+ 
+ Contact management is the main core of CiviCRM, allowing organizations to keep track of all their contacts in one place. It allows organizations to create detailed profiles for each contact, including their contact information, demographics, relationships, and interactions with the organization.
+
+ CiviCRM is highly customizable and flexible platform, and can be integrated with other open-source software like Drupal, WordPress. It is widely used by non-profit organizations, charities, advocacy groups, political campaigns, and other civic sector organizations around the world.
+
+ In conclusion, CiviCRM is a powerful and flexible CRM solution. It provides a wide range of features for managing contacts, fundraising, events, memberships, and campaigns. It is highly customizable and can be integrated with other open-source software to create a comprehensive online presence for non-profit organizations.
 
 \subsection{Trello}
 
+Trello is a web-based project management application that allows individuals and teams to organize tasks, projects, and ideas using boards, lists, and cards.
+
+This application  allows users to organize tasks and projects. The interface consists of boards, which represent projects, lists, which represent stages of a project, and cards, which represent individual tasks or items within a project.The users can create and customize theirs environments (boards, lists and cards).
+
+Trello is designed to be easy to use and accessible for users of all levels. It can be used for a wide range of applications, including project management, personal to-do lists, event planning, team collaboration, and more.
+
+So, Trello is a powerful and flexible project management tool that allows individuals and teams to manage projects and tasks efficiently and collaboratively.
+
 \subsection{Airtable}
+
+Airtable is a cloud-based application spreadsheet and database management tool that allows users to organize data in just one place. It combines the flexibility of a spreadsheet with the power of a database, making it a popular choice for individuals and businesses of all sizes.
+
+With this application it is possible to create tables to store theirs data, it can manage different types of data. Users can create relationships between tables. Another key feature of Airtable is its collaboration tools. Multiple users can access and edit the same tables and views.
+
+
+In conclusion, Airtable is a powerful tool to manage data with a spreadsheet visual.
 
 \subsection{Bitrix24}
 
+Bitrix24 is a business management software platform that offers a wide range of tools and features to help organizations of all sizes manage their tasks, projects, communication, and customer relationships. It is a cloud-based application, which means that users can access their data and tools from anywhere.
+
+Bitrix24 is a very wide platform, that includes variety of modules, including CRM, project management, communication and Human Resources. The CRM module can help organizations improve their sales and customer service processes, as well as gain insights into customer behavior and preferences.
+
+Other important feature of this platform is the communication tools, such as intant mesaging, video conferencing and collaboration tools, so that the team can communicate more easly.
+
+In short, is a very complete tool that allows the users to do a large sets of operation in the same platform.
+
+
+
 \subsection{suiteCRM}
+
+SuiteCRM is a free and open-source Customer Relationship Management (CRM) software that is designed to help businesses manage their interactions with customers and leads. It is built on PHP and uses MySQL or MariaDB as its database management system.
+
+SuiteCRM offers a wide range of features and functionalities that can help businesses manage their sales and customer service processes. These include contact and lead management, sales forecasting, opportunity management, email integration, task management, calendar management, and reporting. Additionally, SuiteCRM provides customization options, allowing users to tailor the software to their specific needs and requirements. This flexibility, combined with its powerful automation features, make SuiteCRM a popular choice for businesses of all sizes, across a range of industries.
+
+One of the key features of SuiteCRM is its powerful workflow automation engine, which allows users to automate tasks and processes within the CRM. This can help businesses streamline their sales and marketing processes, improve efficiency, and increase productivity.
+
+Additionally, SuiteCRM offers a range of integrations with other software and platforms, including email marketing tools, social media platforms, and accounting software, among others. 
+
+Overall, SuiteCRM is a comprehensive and customizable CRM software that can help businesses improve their customer engagement and drive growth. With its powerful automation features and integrations, it can help businesses streamline their sales and marketing processes and improve their overall efficiency and productivity.
+
 
 \section{CRM Selection Criteria}
 
